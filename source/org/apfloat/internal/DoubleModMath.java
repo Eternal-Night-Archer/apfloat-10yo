@@ -1,3 +1,20 @@
+// DoubleModMath.java
+public final double modPow(double a, double n) {
+    if (n == 0) { return 1; }
+    else if (n < 0) {
+        return modPow(a, getModulus() - 1 + n);
+    }
+    // ignore some code
+    return r;
+}
+
+// DoubleElementaryModMath.java
+public final double getModulus() { return this.modulus; }
+private long longModulus;
+private double modulus;
+private double inverseModulus;
+
+
 package org.apfloat.internal;
 
 /**
